@@ -330,13 +330,13 @@ You can build your own custom Pivot with your custom logic with just few lines o
 From the GUI, the users can pivot in two ways:
 
 - If a Job executed a [Visualizer](#visualizers), it is possible to select a field extracted and analyze its value by clicking the "Pivot" button (see following image). In this way, the user is able to "jump" from one indicator to another.
-  ![img.png](../static/pivot_job_report.png)
+  ![img.png](./static/pivot_job_report.png)
 
 - Starting from an already existing [Investigation](#investigations-framework), it is possible to select a Job block and click the "Pivot" button to analyze the same observable again, usually choosing another [Playbook](#playbooks) (see following image)
-  ![img.png](../static/pivot_investigation_report.png)
+  ![img.png](./static/pivot_investigation_report.png)
 
 In both cases, the user is redirected to the Scan Page that is precompiled with the observable selected. Then the user would be able to select the [Playbook](#playbooks) to execute in the new job.
-![img.png](../static/pivot_scan_page.png)
+![img.png](./static/pivot_scan_page.png)
 
 After the new Job is started, a new [Investigation](#investigations-framework) will be created (if it does not already exist) and both the jobs will be added to the same Investigation.
 
@@ -345,7 +345,7 @@ In the following image you can find an example of an [Investigation](#investigat
 - leveraging the first way to create a Pivot, the 2 Jobs that analyzed IP addresses have been generated from the first `test\.com` Job
 - leveraging the second way to create a Pivot, the second `test\.com` analysis had been created with a different Playbook.
 
-![img.png](../static/pivot_investigation.png)
+![img.png](./static/pivot_investigation.png)
 
 ### Visualizers
 
@@ -419,11 +419,11 @@ If you want to share them to every user in IntelOwl, create them via the Django 
 If you want share them to yourself or your organization only, you need to leverage the "Save as Playbook" button that you can find on the top right of the Job Result Page.
 In this way, after you have done an analysis, you can save the configuration of the Plugins you executed for re-use with a single click.
 
-![img.png](../static/playbook_creation.png)
+![img.png](./static/playbook_creation.png)
 
 The created Playbook would be available to yourself only. If you want either to share it with your organization or to delete it, you need to go to the "Plugins" section and enable it manually by clicking the dedicated button.
 
-![img.png](../static/playbooks_cr.png)
+![img.png](./static/playbooks_cr.png)
 
 ### Generic Plugin Creation, Configuration and Customization
 
@@ -474,11 +474,11 @@ Changing other keys can break a plugin. In that case, you should think about dup
 Other options can be added at the "Python module" level and not at the Plugin level. To do that, go to: `admin/api_app/pythonmodule/` and select the Python module used by the Plugin that you want to change.
 For example, the analyzer `AbuseIPDB` uses the Python module `abuseipdb.AbuseIPDB`.
 
-![img.png](../static/python_module_abuseipdb.png)
+![img.png](./static/python_module_abuseipdb.png)
 
 Once there, you'll get this screen:
 
-![img.png](../static/abuseipdb.png)
+![img.png](./static/abuseipdb.png)
 
 There you can change the following values:
 
@@ -525,10 +525,10 @@ This is the order to define which values are used for the parameters, starting b
 - Plugin Configuration of the Organization
 - Default Plugin Configuration of the Parameter
 
-If you are using the GUI, please remember that you can always check the Parameters before starting a "Scan" by clicking at the "Runtime configuration" ![img.png](../static/runtime_config.png) button.
+If you are using the GUI, please remember that you can always check the Parameters before starting a "Scan" by clicking at the "Runtime configuration" ![img.png](./static/runtime_config.png) button.
 
 Example:
-![img.png](../static/runtime_config_2.png)
+![img.png](./static/runtime_config_2.png)
 
 </div>
 
@@ -541,9 +541,9 @@ Considering the impact that this change could have in the application, the GUI d
 - Org Administrators may leverage the feature documented [here](#disable-analyzers-at-org-level) to enable/disable plugins for their org. This can be helpful to control users' behavior.
 - IntelOwl Superusers (full admin) can go to the Django Admin Interface and enable/disable them from there. This operation does overwrite the Org administrators configuration. To find the plugin to change, they'll need to first choose the section of its type ("ANALYZERS_MANAGER", "CONNECTORS_MANAGER", etc), then select the chosen plugin, change the flag on that option and save the plugin by pressing the right button.
 
-![img.png](../static/disabled.png)
+![img.png](./static/disabled.png)
 
-![img.png](../static/save.png)
+![img.png](./static/save.png)
 
 ### Special Plugins operations
 
@@ -633,20 +633,20 @@ _Investigations_ are created in 2 ways:
   - if you run a Job with a Playbook which contains a [Pivot](#pivots) that triggers another Job, a new investigation will be created and both the Jobs will be added to the same investigation. See how you can create a new [Pivot manually from the GUI](#creating-pivots-from-the-gui).
 - manually: by clicking on the button in the "History" section you can create an Investigation from scratch without any job attached (see following image)
 
-![img.png](../static/create_investigation.png)
+![img.png](./static/create_investigation.png)
 
 If you want to add a job to an Investigation, you should click to the root block of the Investigation (see following image):
 
-![img_1.png](../static/add_job_to_investigation.png)
+![img_1.png](./static/add_job_to_investigation.png)
 
 Once a job has been added, you'll have something like this:
 
-![img.png](../static/simple_investigation.png)
+![img.png](./static/simple_investigation.png)
 
 If you want to remove a Job, you can click on the Job block and click "Remove branch". On the contrary, if you just want to see Job Results, you can click in the "Link" button. (check next image)
 
-![img.png](../static/job_options.png)
+![img.png](./static/job_options.png)
 
 ### Example output of a complex investigation
 
-![investigation_screen.png](../static/investigation_screen.png)
+![investigation_screen.png](./static/investigation_screen.png)

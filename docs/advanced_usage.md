@@ -36,7 +36,7 @@ Owners and admins share the following powers: they can manage invitations and th
 
 Once an invite has sent, the invited user has to login, go to the "Organization" section and accept the invite there. Afterwards the Administrator will be able to see the user in his "Organization" section.
 
-![img.png](../static/accept_invite.png)
+![img.png](./static/accept_invite.png)
 
 #### Plugins Params and Secrets
 
@@ -49,7 +49,7 @@ Only Owners and Admins of the organization can set, change and delete them.
 The org admin can disable a specific plugin for all the users in a specific org.
 To do that, Org Admins needs to go in the "Plugins" section and click the button "Enabled for organization" of the plugin that they want to disable.
 
-![img.png](../static/disable_org.png)
+![img.png](./static/disable_org.png)
 
 ### Registration
 
@@ -170,7 +170,7 @@ Some analyzers provide the chance to customize the performed analysis based on p
 
 ##### from the GUI
 
-You can click on "**Runtime Configuration**" ![img.png](../static/runtime_config.png) button in the "Scan" page and add the runtime configuration in the form of a dictionary.
+You can click on "**Runtime Configuration**" ![img.png](./static/runtime_config.png) button in the "Scan" page and add the runtime configuration in the form of a dictionary.
 Example:
 
 ```javascript
