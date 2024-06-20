@@ -3,7 +3,8 @@ name: Trigger Central Documentation Repository Workflow
 on:
   push:
     branches:
-      - main
+      - master
+      - mkdocs
 
 jobs:
   trigger_central:
