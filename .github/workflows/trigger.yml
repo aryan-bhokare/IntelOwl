@@ -14,6 +14,6 @@ jobs:
       - name: Trigger central documentation repository workflow
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DOCS_ACCESS_TOKEN }}
           repository: aryan-bhokare/docs
           event-type: update-docs
