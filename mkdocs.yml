@@ -24,6 +24,13 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - monorepo
   - mkdocstrings
+  - swagger-ui-tag:
+      background: white
+      docExpansion: none
+      filter: true
+      syntaxHighlightTheme: monokai
+      # tryItOutEnabled: true
+
 theme:
   name: material
   # custom_dir: overrides
